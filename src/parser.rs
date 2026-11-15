@@ -88,7 +88,7 @@ fn parse_generic_option(i: &[u8]) -> IResult<&[u8], DHCPGenericOption> {
     }
 }
 
-fn convert_generic_option<'a>(
+pub(crate) fn convert_generic_option<'a>(
     i: &'a [u8],
     opt: DHCPGenericOption<'a>,
 ) -> IResult<&'a [u8], DHCPOption<'a>> {

@@ -21,3 +21,6 @@ pub use parser::*;
 
 mod state;
 pub use state::*;
+
+mod strict;
+pub use strict::*;

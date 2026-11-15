@@ -21,6 +21,10 @@ See also:
 ### <unreleased>
 
 * Initial version
+* Add strict parsing entry point (`parse_dhcp_message_strict`) for untrusted
+  input: validates the magic cookie, bounds the option count, checks
+  `sname`/`file` padding and trailing bytes after the End option, and
+  classifies input as valid / recoverable / rejected with stable offsets
 
 ## Rusticata
 
